@@ -1,7 +1,8 @@
 # Visual Studio Code
 .vscode/
 
-# .gitignore
+# 
+.gitignore
 
 # Carpeta bin generada por la compilación
 bin/
