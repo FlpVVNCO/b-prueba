@@ -12,7 +12,6 @@ namespace MiProyecto
     public int Total { get; set; }
     public DateTime Fecha { get; set; }
 
-    // No es necesario agregar [ForeignKey("Local")]
     public long ID_Local { get; set; }
 
     public Local Local { get; set; } = new Local(); // Propiedad de navegación

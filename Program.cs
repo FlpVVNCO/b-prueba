@@ -3,12 +3,14 @@ using System.Linq;
 using MiProyecto;
 using Microsoft.EntityFrameworkCore;
 
-class Program 
+class Program
 {
   static void Main()
   {
     using (var context = new MyDbContext()) // Reemplaza "TuDbContext" con el nombre de tu DbContext
     {
+
+
 
       context.ChangeTracker.Clear();
 
@@ -18,6 +20,7 @@ class Program
           .Include(vd => vd.Producto)
           .ThenInclude(p => p.Marca)
           .ToList();
+
 
       // Pregunta 1: El total de ventas de los últimos 30 días (monto total y cantidad total de ventas).
       var totalMontoVentas = datos.Sum(s => s.TotalLinea);
@@ -107,6 +110,7 @@ class Program
         }
       }
 
+      Console.WriteLine("Terminó...");
     }
 
   }
