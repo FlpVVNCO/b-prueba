@@ -3,7 +3,7 @@
 Proyecto desarrollado con C# + Entity Framework.
 El objetivo era desarrollar una aplicación de consola con C# + Entity Framework(opcional) que realizara una consulta a una base de datos RDS
 la cual devolvería las ventas de los ultimos 30 días y con esa información responder las preguntas requeridas.
-También realizar las consultas SQL con las mismos requerimietnos.
+También realizar las consultas SQL con las mismos requerimientos.
 
 ## Comenzando a desplegar 🚀
 
